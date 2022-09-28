@@ -14,7 +14,9 @@ Git is a _free and open source distributed version control system_. What does th
 **What is a repository?**
 In Computer Science, a repository refers to central location in which data is stored and managed, the main source of the code.
 An important thing to note about a Git repository is that it can store multiple versions of the code, independent from each other, corresponding to the so-called _branches_. Branches allow developers to work on certain features, keep them in sync with the main branch (the source of truth) and _merge_ them into the main branch when they are ready. Down below you can see an example of how the structure of a Git repo can evolve!
+
 ![](https://uploads.sitepoint.com/wp-content/uploads/2019/06/155993572204-gitflow.png)
+#
 🤔 The master branch is the main one, we don't use that naming anymore, find out more [here](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main).
 
 **Which are the most useful Git commands?**
