@@ -1,6 +1,5 @@
 # Web tech labs
 ## _Lab 1_
-#
 ### Git and version control
 **What is Git?**
 
@@ -31,5 +30,5 @@ An important thing to note about a Git repository is that it can store multiple 
 - **git status** - prints out the local state of the changes
 - **git log** - shows latest commits
 - **git config** - sets config variables, we use it to set the _email_ and the _name_ so that the remote repo knows who's making the changes
-
+#
 🤔 Feeling extra curious? [Here](https://www.youtube.com/watch?v=f1wnYdLEpgI) and [here](https://www.youtube.com/watch?v=ElRzTuYln0M) you can find clips about some advanced (and really cool) features of Git
