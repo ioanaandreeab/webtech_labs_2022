@@ -173,7 +173,9 @@ When working with arrays oftentimes we need to iterate over the elements and, if
 - **forEach()**
 - **for...of**
 - **for...in**
+
 these first ones are used _only_ for looping over an array
+
 - **map()** - loops over the array and performs a specific transformation (mapping) for each element
 - **filter()** - given a condition, loops over the array and returns only the elements that conform to it
 - **reduce()** - using an accumulator, loops over the array and summarizes the contents of it
