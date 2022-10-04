@@ -168,7 +168,7 @@ There are some properties and functions that are useful when handling arrays:
 - **push()** - method that allows us to insert an element at the _end_ of the array
 - **pop()** - method for removing and returning the _first_ element of an array
 
-When working with arrays oftentimes we need to iterate over the elements and, if the case, perform actions on the elements. Here are some useful _methods and iteration structures_ for which you can find examples in the source code of the labs:
+When working with arrays oftentimes we need to iterate over the elements and, if the case, perform actions on them. Here are some useful _methods and iteration structures_ for which you can find examples in the source code of the labs:
 - **for**
 - **forEach()**
 - **for...of**
