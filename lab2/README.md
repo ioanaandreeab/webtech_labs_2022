@@ -36,6 +36,7 @@ You can take a closer look at the **client-server architecture** (that is powere
 **Which actions can a client take on the Web?**
 
 The **request methods** determine the acitons that the server needs to perform on the resources specified by the client. A client can therefore **C**reate a resource (_POST_), **R**ead it (_GET_), **U**pdate it (_PUT_) or **D**elete it (_DELETE_). (_💡Notice the bold letters - those form a concept that summarizes the standard instructions that can be performed on a resource and that are key to data persistence - **CRUD**, we'll encounter these again when we'll create our own web server in the next labs_)
+
 Depending on whether or not the server is able to process the request, there are multiple **response status codes** it can send back to the client to inform the state of the action. There are 5 main categories of response statuses:
 - **1**XX - informational responses
 - **2**XX - successful responses
@@ -166,7 +167,7 @@ Each element can be accessed using the **index**, which starts at **0**. (eg. ar
 There are some properties and functions that are useful when handling arrays:
 - **length** - property to get the length of the array
 - **push()** - method that allows us to insert an element at the _end_ of the array
-- **pop()** - method for removing and returning the _first_ element of an array
+- **pop()** - method for removing and returning the _last_ element of an array
 
 When working with arrays oftentimes we need to iterate over the elements and, if the case, perform actions on them. Here are some useful _methods and iteration structures_ for which you can find examples in the source code of the labs:
 - **for**
