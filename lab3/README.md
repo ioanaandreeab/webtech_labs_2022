@@ -1,7 +1,6 @@
 # _Lab 3_
 
 ## Array practice
-***
 
 In this lab we did some practical exercises. To redo the lab at home:
 - for each topic, check _demo.js_ (you'll find an example there)
