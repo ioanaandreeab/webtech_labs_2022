@@ -4,6 +4,22 @@ class MusicalInstrument {
         this.country = country;
     }
 
+    get getName() {
+        return this.name;
+    }
+
+    get getCountry() {
+        return this.country;
+    }
+
+    set setName(value) {
+        this.name = value;
+    }
+
+    set setCountry(value) {
+        this.country = value;
+    }
+
     playNote(note) {
         console.log(`${this.name} is now playing the note ${note}`);
     }
@@ -27,3 +43,5 @@ class Guitar extends MusicalInstrument {
 const myGuitar = new Guitar("Ibanez", "Romania", 6);
 myGuitar.getInstrumentDescription();
 myGuitar.playNote("E");
+myGuitar.setName = "Ibanez Pro";
+console.log(myGuitar.getName);
