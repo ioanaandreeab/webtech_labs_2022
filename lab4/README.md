@@ -36,8 +36,10 @@ const cactus = new Plant("Cactaceae", "Americas");
 
 As you can see, the method is added directly to the prototype of the function Plant (which by nature already acts as a constructor, we defined it earlier).
 If we print out the cactus object we can observe all these things we defined:
+![](https://github.com/ioanaandreeab/webtech_labs_2022/blob/main/lab4/assets/function.png?raw=true)
 
 When using classes, this would translate to:
+![](https://github.com/ioanaandreeab/webtech_labs_2022/blob/main/lab4/assets/class.png?raw=true)
 ```
 class Plant {
     constructor(species, region) {
