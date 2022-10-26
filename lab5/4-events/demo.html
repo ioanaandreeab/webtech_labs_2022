@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+                const form = document.getElementById("form");
+
+                const formSubmitHandler = (event) => {
+                    event.preventDefault();
+                    const list = document.getElementById("todo");
+                    const taskText = document.getElementById("task").value;
+
+                    const listItem = document.createElement("li");
+                    listItem.innerHTML = taskText;
+                    list.appendChild(listItem);
+                }
+                // form.addEventListener("submit", formSubmitHandler);
+                form.onsubmit = formSubmitHandler; 
+            }
+        </script>
+    </head>
+    <body>
+        <h1>To do list</h1>
+        <ul id="todo"></ul>
+        <h2>Add a new task</h2>
+        <form id="form">
+            <input type="text" id="task">
+            <button type="submit" id="submitBtn">Add</button>
+        </form>
+    </body>
+</html>

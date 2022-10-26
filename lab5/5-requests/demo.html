@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload = () => {
+                const form = document.getElementById("add-song");
+
+                const formSubmitHandler = (event) => {
+                    // add song and display in list
+                }
+                
+                form.onsubmit = formSubmitHandler;
+
+                fetch("http://localhost:8080/api/getAllSongs")
+                .then((response) => response.json())
+                .then((data) => {
+                    data.forEach(song => {
+                        const list = document.getElementById("songs");
+
+                        const listItem = document.createElement("li");
+                        listItem.innerHTML = `${song.artist} - ${song.songTitle}`;
+                        list.appendChild(listItem);
+                    });
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <h1>Songs in my playlist</h1>
+        <ul id="songs"></ul>
+        <h2>Add a new song</h2>
+        <form id="add-song">
+            <label>
+                ID:
+                <input type="text" id="id"/>
+            </label>
+            <label>
+                Artist:
+                <input type="text" id="artist"/>
+            </label>
+            <label>
+                Song title:
+                <input type="text" id="song"/>
+            </label>
+            <label>
+                Song duration (in seconds):
+                <input type="text" id="duration"/>
+            </label>
+            <button type="submit" id="submitBtn">Add</button>
+        </form>
+    </body>
+</html>
