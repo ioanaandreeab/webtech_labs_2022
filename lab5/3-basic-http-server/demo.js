@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require ("body-parser");
+const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use("/api", router);
 
-const songs = [
+let songs = [
     {
         id: 1, artist: "Channel Tres", songTitle: "No Limit", duration: 207
     },
@@ -42,12 +42,33 @@ router.get("/getSong/:id", (req, res) => {
 
 // add the endpoints for adding a song and editing an existing song
 router.post("/addSong", (req, res) => {
-
+    const song = req.body;
+    songs.push(song);
+    res.status(201).json(song);
 });
 
 router.put("/modifySong/:id", (req, res) => {
-
-})
+    const {id} = req.params;
+    const changes = req.body;
+    if (id) {
+        const song = songs.find(song => song.id.toString() === id.toString());
+        if (song) {
+            const updatedSongs = songs.map(song => {
+                if (song.id.toString() === id.toString()) {
+                    console.log({...song});
+                    return {...song, ...changes};
+                }
+                return song;
+            });
+            songs = updatedSongs;
+            res.status(202).json({message: "Changes accepted."});
+        } else {
+            res.status(404).json({ err: "Song not found." })
+        }
+    } else {
+        res.status(400).json({ err: "You must specify an id for the query." })
+    }
+});
 
 app.listen(8080);
 console.log("App listening on port 8080");

@@ -4,4 +4,8 @@ const f1 = (a, b) => {
     return a + b;
 };
 
-export {a as pi, f1 as Sum};
+const f2 = (a, b) => {
+    return a * b;
+}
+
+export {a as pi, f1 as Sum, f2 as Multiply};

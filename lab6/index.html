@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <h1>My Spotify Dashboard</h1>
+
+        <ul id="navbar-menu">
+            <li><a href="#profile-description">About</a></li>
+            <li><a href="#profile-stats">Stats</a></li>
+            <li><a href="#my-songs">Songs</a></li>
+            <li><a href="#song-creation">Add Song</a></li>
+        </ul>
+
+        <div class="custom-section" id="profile-description">
+            <h2>About your music taste</h2>
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacus purus, interdum quis nulla sit amet, vulputate ultrices eros.
+                Praesent cursus ante at varius vehicula. Vivamus luctus condimentum felis, eu maximus ex auctor et.
+                Duis pharetra libero condimentum, egestas mauris non, venenatis odio. Etiam finibus molestie nulla, eu auctor velit. In lobortis, ligula non mollis finibus, nisl eros congue quam, vel luctus tellus dolor a leo.
+                Nam interdum suscipit sapien vitae tempus. Cras ullamcorper dignissim augue, sed suscipit risus convallis vel. Etiam ac enim sit amet dolor aliquet volutpat.
+                </p>
+
+                <p>Suspendisse tristique, erat id aliquet pretium, nunc nisi rutrum mi, vel molestie ligula enim eget enim. Maecenas vitae eros convallis, scelerisque leo non, dignissim nunc.
+                Praesent vestibulum nisl quis ullamcorper euismod. Pellentesque convallis ligula in condimentum mollis. Nulla bibendum mattis dui, at ultrices risus dignissim a. 
+                Suspendisse magna sapien, pretium non libero porttitor, varius suscipit turpis. In tempus vestibulum dui non mattis.
+                </p>
+
+                <p>Aenean dignissim nisi non cursus volutpat. Donec lacinia malesuada arcu a fringilla. 
+                Sed eu orci non sem rutrum convallis. Vestibulum commodo elit sed malesuada blandit. Nunc tellus lacus, fermentum tempus eleifend eget, mattis a libero. 
+                Vestibulum pharetra commodo nisi, elementum fringilla quam suscipit et. Sed leo dolor, condimentum quis erat in, consequat condimentum turpis.
+                </p>
+            </div>
+        </div>
+
+        <div class="custom-section" id="profile-stats">
+            <h2>Your stats</h2>
+            <table id="stats-table">
+                <tr>
+                  <th>Artist</th>
+                  <th>Genre</th>
+                  <th>Songs you like</th>
+                </tr>
+                <tr>
+                  <td>Channel Tres</td>
+                  <td>Experimental hip hop</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>NEIL FRANCES</td>
+                  <td>Alternative pop</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                    <td>Men I Trust</td>
+                    <td>Indie</td>
+                    <td>1</td>
+                  </tr>
+              </table>
+        </div>
+
+        <div class="custom-section" id="my-songs">
+            <h2>Songs in my playlist</h2>
+            <ul id="songs"></ul>
+        </div>
+        
+        <div class="custom-section" id="song-creation">
+            <h2>Add a new song</h2>
+            <form id="add-song">
+                <label>
+                    ID:
+                    <input type="text" id="id"/>
+                </label>
+                <label>
+                    Artist:
+                    <input type="text" id="artist"/>
+                </label>
+                <label>
+                    Song title:
+                    <input type="text" id="song"/>
+                </label>
+                <label>
+                    Song duration (in seconds):
+                    <input type="text" id="duration"/>
+                </label>
+                <button type="submit" id="submit-btn">Add</button>
+            </form>
+        </div>
+
+    </body>
+</html>
