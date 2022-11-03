@@ -7,6 +7,31 @@
 
                 const formSubmitHandler = (event) => {
                     // add song and display in list
+                    const list = document.getElementById("songs");
+                    event.preventDefault();
+                    const id = document.getElementById('id').value;
+                    const artist = document.getElementById('artist').value;
+                    const songTitle = document.querySelector('#song').value;
+                    const duration = document.querySelector('#duration').value;
+                    const data = {id, artist, songTitle, duration};
+                    fetch('http://localhost:8080/api/addSong', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(data),
+                        })
+                        .then((response) => response.json())
+                        .then((data) => {
+                            const list = document.getElementById("songs");
+
+                            const listItem = document.createElement("li");
+                            listItem.innerHTML = `${data.artist} - ${data.songTitle}`;
+                            list.appendChild(listItem);
+                        })
+                        .catch((error) => {
+                            console.error('Error:', error);
+                        });
                 }
                 
                 form.onsubmit = formSubmitHandler;
