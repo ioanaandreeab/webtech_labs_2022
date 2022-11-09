@@ -4,6 +4,10 @@
 **Homework 1** 
 - access it [here](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/homework-1)
 - send your answers [here](https://forms.gle/PPt8FRFWfwoZWkCm7)
+
+**Homework 2** 
+- access it [here](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/homework-2)
+- send your answers [here](https://forms.gle/686d7K6VJKvyRtXTA)
 Good luck! :)
 
 ## Latest lab:
@@ -16,3 +20,4 @@ Good luck! :)
 - [Lab 4 - Classes, closures, exceptions, async programming](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab4)
 - [Lab 5 - Modules, dependencies, basic http server and client-server interactions](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab5)
 - [Lab 6 - CSS basics](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab6)
+- [Lab 7 - CSS flex, grid, media queries](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab7)

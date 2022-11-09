@@ -1,0 +1,29 @@
+body {
+
+}
+
+.ui {
+
+}
+
+.menu {
+
+}
+
+.menu-item {
+
+}
+
+.burger-menu {
+
+}
+
+@media screen and (max-width: 400px) {
+    .menu {
+
+    }
+
+    .burger-menu {
+
+    }
+}
