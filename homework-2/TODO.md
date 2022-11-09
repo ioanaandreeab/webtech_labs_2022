@@ -1,4 +1,3 @@
-# Subject 2 (2.5 pts)
 # TOPIC: Javascript
 
 # Having the `function addTokens(input, tokens)` where:
