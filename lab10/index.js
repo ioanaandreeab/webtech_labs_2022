@@ -1,15 +1,23 @@
 // https://sqlite.org/download.html
 
+// init express
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const indexRouter = require('./routes/index');
+
+// init sequelize
 const sequelize = require('./sequelize');
+
+// import created models
 const Movie = require("./models/movie");
 const Studio = require("./models/studio");
 
+// establish relationship between models
+// one-to-many
 Studio.hasMany(Movie);
 
+// start express app
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

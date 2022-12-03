@@ -2,7 +2,7 @@ const {Sequelize} = require("sequelize");
 
 const sequelize = new Sequelize({
     dialect: "sqlite",
-    storage: "./sqlite/moviesdb.db"
+    storage: "./sqlite/cinema.db"
 });
 
 sequelize.sync().then(() => {
