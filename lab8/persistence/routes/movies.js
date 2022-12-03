@@ -76,39 +76,4 @@ router.delete("/:movieId", async(req, res) => {
     }
 })
 
-// relationships
-// add an actor to movie
-// router.post("/:movieId/actors", async(req, res) => {
-//     try {
-//         const movie = await Movie.findByPk(req.params.movieId);
-//         if (movie) {
-//             const actor = new Actor(req.body);
-//             actor.movieId = movie.id;
-//             await actor.save();
-//             res.status(201).json({message: "actor added to movie."});
-//         } else {
-//             res.status(404).json({message: "movie not found."});
-//         }
-//     } catch (err) {
-//         res.status(500).json({message: "server error", err: err})
-//     }
-// });
-
-// // get all actors of a movie
-// router.get("/:movieId/actors", async(req, res) => {
-//     try {
-//         const movie = await Movie.findByPk(req.params.movieId, {
-//             include: [Actor]
-//         });
-//         if (movie) {
-//             res.status(200).json({actors: movie.actors})
-//         } else {
-//             res.status(404).json({message:"movie not found."})
-//         }
-//     } catch (err) {
-//         res.status(500).json({message: "server error", err: err})
-//     }
-// })
-
-
 module.exports = router;
