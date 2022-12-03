@@ -1,0 +1,1 @@
+here you should add the contents of the sqlite zip you dowloaded from https://sqlite.org/download.html and run the command _.open movies.db_ after running ./sqlite3.exe (or ./sqlite3 if you're on mac) file
