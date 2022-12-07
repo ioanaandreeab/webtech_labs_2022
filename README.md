@@ -9,6 +9,10 @@
 - access it [here](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/homework-2)
 - send your answers [here](https://forms.gle/686d7K6VJKvyRtXTA)
 
+**Homework 3** 
+- access it [here](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/homework-3)
+- send your answers [here](https://forms.gle/ayjKaCGZVgf4MKfMA)
+
 Good luck! :)
 
 ## Latest lab:
