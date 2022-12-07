@@ -12,10 +12,14 @@ const sequelize = require('./sequelize');
 // import created models
 const Movie = require("./models/movie");
 const Studio = require("./models/studio");
+const Actor = require("./models/actor");
 
 // establish relationship between models
 // one-to-many
 Studio.hasMany(Movie);
+// many-to-many
+Actor.belongsToMany(Movie, {through: "actors_movies"});
+Movie.belongsToMany(Actor, {through: "actors_movies"});
 
 // start express app
 const app = express();
