@@ -72,4 +72,21 @@ router.post("/:movieId/actors/:actorId", async(req, res) => {
     }
 });
 
+// delete an actor from a movie
+router.delete("/:movieId/actors/:actorId", async(req, res) => {
+    try {
+        const movie = await Movie.findByPk(req.params.movieId);
+        const actor = await Actor.findByPk(req.params.actorId);
+        if (movie && actor) {
+            movie.removeActor(actor);
+            await movie.save();
+            res.status(200).json({message: "deleted actor from movie", actor:actor, movie: movie});
+        } else {
+            res.status(404).json({message: "movie/actor not found."});
+        }
+    } catch (err) {
+        res.status(500).json({message: "server error", err: err})
+    }
+});
+
 module.exports = router;
