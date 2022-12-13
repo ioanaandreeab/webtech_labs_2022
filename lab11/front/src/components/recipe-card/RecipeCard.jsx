@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
 
 import './RecipeCard.css';
 
 const RecipeCard = ({name, prepTime, ingredients, difficulty}) => {
+    const [completedTimesCount, setCompletedTimesCount] = useState(0);
+
     return (
         <div className="recipe-card">
             <h1>{name}</h1>
@@ -17,7 +20,8 @@ const RecipeCard = ({name, prepTime, ingredients, difficulty}) => {
             <p>{`${prepTime} minutes`}</p>
             <h3>Difficulty:</h3>
             <p>{difficulty}</p>
-            <button className="recipe-details-btn">Recipe completed?</button>
+            <p>{`You completed this recipe ${completedTimesCount} times`}</p>
+            <button className="recipe-details-btn" onClick={() => setCompletedTimesCount(completedTimesCount + 1)}>Recipe completed?</button>
         </div>
     );
 };
