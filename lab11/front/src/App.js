@@ -1,13 +1,11 @@
 import './App.css';
-import { RecipeCard } from './components/recipe-card/RecipeCard';
-import {recipes} from './utils';
+import { RecipeList } from './components/recipe-list/RecipeList';
 
 function App() {
   return (
     <div className="App">
-      {recipes.map((recipe, index) => (
-        <RecipeCard key={index} name={recipe.name} prepTime={recipe.prepTime} difficulty={recipe.difficulty} ingredients={recipe.ingredients}/>
-      ))}
+      <h1>My recipes collection</h1>
+      <RecipeList/>
     </div>
   );
 }
