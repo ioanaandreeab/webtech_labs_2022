@@ -1,0 +1,20 @@
+.recipe-form {
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.recipe-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-recipe-btn {
+    border: none;
+    padding: 10px;
+    background-color: #462255;
+    color: whitesmoke;
+    border-radius: 5px;
+}

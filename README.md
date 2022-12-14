@@ -16,7 +16,7 @@
 Good luck! :)
 
 ## Latest lab:
-- [Lab 9 - Persistence with sqlite](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab9)
+- [Lab 10 - ORM relationships](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab10)
 
 ## All labs:
 - [Lab 1 - Git and version control](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab1)
@@ -29,3 +29,5 @@ Good luck! :)
 - [Lab 8 - REST & express.js](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab8)
 - [Lab 9 - Persistence with sqlite](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab9)
 - [Lab 10 - ORM relationships](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab10)
+- [Lab 11 - React](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab11)
+- [Lab 12 - React Router & Redux](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab12)

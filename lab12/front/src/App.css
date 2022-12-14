@@ -1,0 +1,25 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+}  
+
+.App {
+    padding: 20px;
+    height: 100%;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.custom-btn {
+    border: none;
+    padding: 10px;
+    background-color: #462255;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.custom-btn:hover{
+    background-color: #8340A0;
+}
