@@ -1,0 +1,6 @@
+- fetch recipes from backend
+- render a list of recipe cards for each recipe fetched
+- add the recipe creation form
+- add recipe to db
+- create a simplified view of the recipes and switch between views (simplied and recipe card - detailed)
+- (possible hw) - implement edit (for each card go into edit mode and send edit request)
