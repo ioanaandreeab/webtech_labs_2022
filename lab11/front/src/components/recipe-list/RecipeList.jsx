@@ -1,6 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 
+import {RecipeCard} from '../recipe-card/RecipeCard';
+import {RecipeForm} from '../recipe-form/RecipeForm';
+
 import './RecipeList.css';
 
 const SERVER_ADDR = "http://localhost:5002";
@@ -19,13 +22,16 @@ const RecipeList = () => {
     }
 
     // when component is mounted, fetch recipes from backend server
+    useEffect(() => {
+        axios.get(`${SERVER_ADDR}/api/recipes`).then(res => setRecipes(res.data.recipes));
+    }, [])
 
     return (
         <React.Fragment>
             <div className='recipe-list'>
-                list of recipes goes here
+                {recipes.map((recipe, index) => <RecipeCard key={index} recipe={recipe}/>)}
             </div>
-            add recipe form goes here
+            <RecipeForm onAdd={addRecipe}/>
         </React.Fragment>
     )
 };
