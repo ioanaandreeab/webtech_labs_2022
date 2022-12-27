@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 import './RecipeForm.css';
 
+// used for adding a recipe
 const RecipeForm = (props) => {
     const [name, setName] = useState('');
     const [prepTime, setPrepTime] = useState('');

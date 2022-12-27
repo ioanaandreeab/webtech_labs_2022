@@ -6,8 +6,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .recipe-card .title-container {
     border-bottom: 1px solid black;
+}
+
+.recipe-card-del-btn {
+    border: none;
+    padding: 10px;
+    background-color: #832232;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recipe-card-save-btn {
+    border: none;
+    padding: 10px;
+    background-color: #7d82b8;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
 }

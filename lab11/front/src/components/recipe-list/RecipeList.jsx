@@ -21,6 +21,16 @@ const RecipeList = () => {
         getRecipes();
     }
 
+    const editRecipe = async(recipe) => {
+        await axios.put(`${SERVER_ADDR}/api/recipes/${recipe.id}`, {prepTime: recipe.prepTime, name: recipe.name, difficulty: recipe.difficulty});
+        getRecipes();
+    }
+
+    const deleteRecipe = async(recipe) => {
+        await axios.delete(`${SERVER_ADDR}/api/recipes/${recipe.id}`);
+        getRecipes();
+    }
+
     // when component is mounted, fetch recipes from backend server
     useEffect(() => {
         axios.get(`${SERVER_ADDR}/api/recipes`).then(res => setRecipes(res.data.recipes));
@@ -29,7 +39,7 @@ const RecipeList = () => {
     return (
         <React.Fragment>
             <div className='recipe-list'>
-                {recipes.map((recipe, index) => <RecipeCard key={index} recipe={recipe}/>)}
+                {recipes.map((recipe, index) => <RecipeCard key={index} recipe={recipe} onEdit={editRecipe} onDelete={deleteRecipe} />)}
             </div>
             <RecipeForm onAdd={addRecipe}/>
         </React.Fragment>

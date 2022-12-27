@@ -57,7 +57,7 @@ router.put("/:recipeId", async(req, res) => {
         const recipe = await Recipe.findByPk(req.params.recipeId);
         if (recipe) {
             const updatedRecipe = await recipe.update(req.body);
-            res.status(200).json({movie: updatedRecipe});
+            res.status(200).json({recipe: updatedRecipe});
         } else {
             res.status(404).json({message: "recipe not found."});
         }
