@@ -20,7 +20,7 @@
 Good luck! :)
 
 ## Latest lab:
-- [Lab 12 - React Router & Redux](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab12)
+- [Lab 13 - Third party components in React (Material UI)](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab13)
 
 ## All labs:
 - [Lab 1 - Git and version control](https://github.com/ioanaandreeab/webtech_labs_2022/tree/main/lab1)
